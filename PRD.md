@@ -14,7 +14,6 @@ The telegraph should be able to have the following things:
     <li>Give a basic understanding on how information is transferred across a cable.</li>
 </ul>
 <br> 
-<br>
 <b>The pager:</b>
 <br>
 The pager should do these things:
