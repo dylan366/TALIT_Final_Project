@@ -59,8 +59,27 @@ ChatGPT seems like an excellent way to resolve the second big challenge of teach
 ## Time table
 |      When     |      What     |
 |---------------|---------------|
-|until the spring break | finish planning, start studying |
-| until may-break | assemble all needed pieces, make files |
+|until the spring break | finish planning, start studying, collect info to telecoms |
+| until may-break | assemble all needed pieces, start creating files |
 |until summer break | build, make files, instructions |
 | autumn break |finish files, instructions, builds
 |after autumn break | due date |
+### Milestones
+- Finish planning and studying
+- find sources for learning
+- Building the devices (seperate, not parallel)
+- Finish files, instructions
+- finish builds
+
+## Minimal Viable Product
+A github page where mainly highschool students can learn the basics of telecommunication with files explaining the theory behind it and also instructions on how to build a few simple devices such as a telegraph and a pager.
+
+## Nice to have
+### Must-haves
+- summarised material to learn the basics of telecommunication at a highschool level
+- a working telegraph (3d-printed or wooden, analog)
+- a working pager (3d-printed, analog, using special pre-built components)
+
+### Optional (if time allows)
+- a pager without pre-built components (all built by myself)
+- more detail of information in the files
