@@ -30,8 +30,27 @@ The pager should do these things:
         </ul>
     </li>
 </ul>
-Same as with the telegraph
+Same as with the telegraph. (History, how it works, 3D-print, circuit, etc...)
 
 ## Sketches
 Sketch of the github repository. 
 ![alt text](github_sketch.png)
+
+Sketch of probable github file hierarchy. (Changes can occur)
+![alt text](image.png)
+
+## Technical details
+As quickly mentioned above, I believe to get the realest understanding of this topic, I shoudl build the telegraph and pager with the most "natural" stuff if that makes sense. So for the pager, which obviously is much more complex than a telegraph, I'll probably be forced to use pre-built devices such as a transmittor or receiver. However, if the time is planned right and I don't have much to do, a kind of extra addition for me would then be to build a second pager completely by myself - so even building and transmittor and receiver by myself. 
+
+The telegraph does not really need any special components. 
+
+As mentioned above aswell, this will all be pure electronics, so no microcontroller such as an Arduino or Raspberry Pi.
+
+
+## Predictions:
+### Challenges:
+I would assume that the actual building will cause a lot of problems. Especially since this entire subject is totally new to me, I will definately run into many problems, be it in the circuit, in the calculations, or in the components. 
+Also, not much of a challenge but still very time-consuming, is to scrape together all the existing knowledge of telecommunications off of the internet, teach it to myself, and then repeat it in my own words for this github. 
+
+### Disclaimer:
+ChatGPT seems like an excellent way to resolve the second big challenge of teaching myself this very broad field through many different website. However I must definately make sure ChatGPT always gives me sources and I check those sources. But its summarising capabilities will most definately come in handy.
