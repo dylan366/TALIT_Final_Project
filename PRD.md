@@ -34,10 +34,10 @@ Same as with the telegraph. (History, how it works, 3D-print, circuit, etc...)
 
 ## Sketches
 Sketch of the github repository. 
-![alt text](github_sketch.png)
+![github](assets/images/github_sketch.png)
 
 Sketch of probable github file hierarchy. (Changes can occur)
-![alt text](image.png)
+![file hierarchy](assets/images/image.png)
 
 ## Technical details
 As quickly mentioned above, I believe to get the realest understanding of this topic, I shoudl build the telegraph and pager with the most "natural" stuff if that makes sense. So for the pager, which obviously is much more complex than a telegraph, I'll probably be forced to use pre-built devices such as a transmittor or receiver. However, if the time is planned right and I don't have much to do, a kind of extra addition for me would then be to build a second pager completely by myself - so even building and transmittor and receiver by myself. 
