@@ -33,5 +33,5 @@ The pager should do these things:
 Same as with the telegraph
 
 ## Sketches
-![alt text for screen readers](C:\Users\dylan\OneDrive\Desktop\talit\Telecoms_learning_project\github_sketch.png "Text to show on mouseover")
 Sketch of the github repository. 
+![alt text](github_sketch.png)
