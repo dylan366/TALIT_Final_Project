@@ -15,6 +15,7 @@ The telegraph should be able to have the following things:
 </ul>
 I will probably 3D-print the components such as the send and recieve box for the telegraph. I might even build it out of wood which might even be easier. Nontheless, all instructions I used will get uploaded to this repository. This part of the project will also dive a little bit into the history of telegraph - which is considered a great milestone in long-distance data-transfer. The telgraph works with a simple circuit board. I will NOT be using a microcomputer, as this will defeat the entire purpose of trying to learn telecommunications from scratch - as if it were the 18th century!
 <br> 
+<br>
 <b>The pager:</b>
 <br>
 The pager should do these things:
