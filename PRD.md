@@ -13,7 +13,7 @@ The telegraph should be able to have the following things:
     <li>Be able to send and receive morse code from one end of a cable to the other</li>
     <li>Give a basic understanding on how information is transferred across a cable.</li>
 </ul>
-simple. 
+<br> 
 <br>
 <b>The pager:</b>
 <br>
