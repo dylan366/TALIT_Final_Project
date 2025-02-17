@@ -54,3 +54,13 @@ Also, not much of a challenge but still very time-consuming, is to scrape togeth
 
 ### Disclaimer:
 ChatGPT seems like an excellent way to resolve the second big challenge of teaching myself this very broad field through many different website. However I must definately make sure ChatGPT always gives me sources and I check those sources. But its summarising capabilities will most definately come in handy.
+
+
+## Time table
+|      When     |      What     |
+|---------------|---------------|
+|until the spring break | finish planning, start studying |
+| until may-break | assemble all needed pieces, make files |
+|until summer break | build, make files, instructions |
+| autumn break |finish files, instructions, builds
+|after autumn break | due date |
