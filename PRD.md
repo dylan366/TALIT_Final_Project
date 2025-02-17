@@ -33,4 +33,5 @@ The pager should do these things:
 Same as with the telegraph
 
 ## Sketches
-<img src="/test.drawio">
+![alt text](C:\Users\dylan\OneDrive\Desktop\talit\TALIT_Final_Project\github_sketch.png "Title")
+Sketch of the github repository. 
