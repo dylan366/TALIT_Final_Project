@@ -10,5 +10,21 @@ To better explain certain aspects, I plan to build devices to really get a bette
 <br>
 The telegraph should be able to have the following things:
 <ul>
-<li>Be able to send and receive morse code from one end of a cable to the other</li>
+    <li>Be able to send and receive morse code from one end of a cable to the other</li>
+    <li>Give a basic understanding on how information is transferred across a cable.</li>
+</ul>
+simple. 
+<br>
+<b>The pager:</b>
+<br>
+The pager should do these things:
+<ul>
+    <li>Better my understanding on electrical circuits.</li>
+    <li>Give an understanding on wireless data transfer.</li>
+    <li>Be able to work how a simple pager system should work;
+        <ul>
+            <li>A station that is used to send information.</li>
+            <li>A small device (the actual pager) that can recieve and show the numbers.</li>
+        </ul>
+    </li>
 </ul>
