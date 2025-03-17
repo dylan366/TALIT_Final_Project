@@ -1,0 +1,34 @@
+The history of telecommunication - notes
+
+History of communicating:
+smoke signals, mirrors, sound, signs, horses, running,
+
+The first telegraph (non-electric, mechanical telegraph):
+
+The first telegraph was Chappe telegraph invented by Claude Chappe in 1794. 
+It was a a system of about 10 meter high towers placed every 5-15km with a metal contraption at the top. 
+This contraption was a rod, on which a long, movable metal beam was built. 
+At the two ends of the first long metal beam, two smaller beams were attached at the ends, also making them movable.
+On the top of a tower a sky-blue mast of 7m in height with a ladder for mechanical access could be found. 
+On top of this was the black contraption mentioned before. 
+The main beam was called a "regulator" and was always 4.6m long and 0.35m wide. 
+The two smaller side wings, which could rotate, were called "indicators" and were each 2m by 0.3m. 
+At the end of each indicator, the end which was also attached to the regulator, 
+a gray counterweight called "ranges" were attached with strings. 
+Then finally, at the foot of the mast inside the control room of the tower was a system of cables and pulleys called "manipulator" which could rotate these 3 beams around. 
+The manipulator had a working miniature of the big system outside so that the operator could see what they were doing, without having to look up the whole time. Regulators and indicators had wind flaps, to stop the wind from interfering with the rotation. The towers also had two wooden holders each with a telescope pointing in the direction of the next tower. The regulator could take two positions, and each of the wings 7, so 2x7x7=98 but minus 6 because those were reserved for special meanings ("Message end" for example). So in total 92 different positions could be taken, as seen in the image {matchingSignalGrid}. Each tower also had a book with 92 pages, each of those containing 92 words - so a total of 8464 possible words. A word was sent using two numbers together, acting almost like a coordinate system. So a single word could take the shape of 8012 for example. This means that the encrypted word sent was on page 80 at the position 12. This Vocabulary Book System was the original Chappe telegraph. However, 8464 words are just a fraction of the French language, and so this system was very fast, but also very limited. Later, when operators realised that words were running out, the Alphabet-Based System of Chappes telegraph rose to popularity. Here, each of the 98 positions was assigned to a letter or number from the start. This took a lot longer to write words, as each new position only created one letter (although abbreviations quickly became the norm), however there was no more limit to just a few words, but now it was also universal to other languages in the Latin alphabet.
+The Chappe vocabulary was used until as late as early Napoleonic era (1810s). 
+There exists no complete Chappe vocabulary book, as all have been destroyed or lost to time. 
+The pdf included {livre-vocabulaire} is a reconstruction of some found pages, however many are missing. 
+Only through context and other historical sources could certain words be reconstructed and figured out, 
+what they meant. But as said before, most of the Chappe vocabulary is not known. 
+The PDF is the messaging book (to send messages by searching for words). 
+Each tower contained two books, a book sorting the encryption by vocabulary 
+(alphabetically, to translate sending messages) and a book sorting by number (to translate receiving messages).
+After 1850 the mechanical telegraph, optical telegraph, semaphore telegraph, 
+or Chappe telegraph (all different names) was completely replaced by the electric telegraph. 
+It had been in use for almost 60 years. 
+This entire Chappe system is comparable to semaphores, the flag-holding system at airports. 
+
+Then ELECTRCITY was discoverd. 
+1753

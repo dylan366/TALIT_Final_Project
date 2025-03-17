@@ -4,3 +4,6 @@
 - wrote a text on the history of the Chappe telegraph, see sources
 - used Wayback to get a copy of the Chappe vocabulary
 - collected sources to Chappe's telegraph
+
+## 10th of March 2025: Pilot Issue on GitHub
+- PILOT created at the bottom of the PRD
