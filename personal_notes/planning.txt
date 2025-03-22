@@ -1,0 +1,110 @@
+====== Aktuelle Kurse ====== 
+===== Grundlagenfach Informatik ===== 
+[[gf_informatik:start|GF Informatik]] 
+===== Ergänzungsfach Informatik ===== 
+[[ef_informatik:start|EF Informatik]] 
+===== Grundlagenfach Physik / Physics ===== 
+[[gf_physics_sca:start|GF Physik/Physics]] 
+===== Schwerpunktfach Physik ===== 
+[[pham_physik_sca:start|PHAM Physik]] 
+===== Grundlagenfach Mathematik / Mathematics ===== 
+[[gf_math_sca:start|GF Mathematik/Mathematics (sca)]] 
+===== TALIT ===== 
+[[talit:start|TALIT Programmierkurs]] 
+[[talit:electronics|TALIT Elektronikkurs]] 
+[[kinderkanti_thymio_race:start|Kinderkanti Thymio Race]] 
+[[ionic:start|Ionic & JavaScript]] 
+[[neuronales_netzwerk_handschrift:start|Neuronales Netzwerk zur Handschrifterkennung (VERALTET)]] 
+===== Freikurse ===== 
+[[fk_schwarze_loecher:start|]] 
+===== Informatik allgemein ===== 
+[[talit:pythonforcsharp|Python for C# developer and vice versa]] 
+[[informatik:arduino_programmieren|Arduino Programmieren]] 
+[[informatik:websites]] [[informatik:git_github|Git & GitHub]] 
+===== Programmierkurse für Lehrpersonen und Mitarbeitende ===== 
+[[programmierkurse_lp_ma:start|Programmierkurse für Lehrpersonen und Mitarbeitende]] 
+
+====== Makerspace ====== 
+[[makerspace:rules|Selbständiges Arbeiten im Makerspace]] 
+[[makerspace:lasercutter|Lasercutter]] 
+====== Sonderkurse ====== 
+[[uninachmittage:latex|Uni-Nachmittage: LaTeX Crashkurs]] 
+[[mintwoche:if_gg_daten|]] 
+====== Archiv Kurse ====== 
+[[fms_tigerjython:start|FMS TigerJython]] 
+[[fms_hardware_computer:start|FMS Hardware Computer]] 
+[[fms_tigerjython_lp:start|FMS TigerJython Lehrer]] 
+[[fms_thymio_film:start|FMS Thymio & Filmbearbeitung]] 
+[[fms_thymio:start|FMS Thymio]] [[fms_algorithmen:start|FMS Algorithmen]] 
+[[fms_informatik_lp:start|FMS Informatik LP]] 
+
+====== Andere ====== 
+[[unterricht_bei_sca:start|]]
+[[python_tutorial_gms:start|Programmieren in Python für GMS]] 
+[[sca:start|sca]] 
+[[selbstaendige_arbeiten_bei_sca:start|Selbständige Arbeiten bei sca]] 
+[[semesterschlusswoche:robotik|Semesterschlusswoche 2022]] 
+[[semesterschlusswoche:thymio|Thymio programmieren]] 
+[[technikwoche:start|Technikwoche 2023]]
+[[telecommunications:start|Telekommunikation]] ------MINE------------
+
+
+--------------------------------------------------------------------------------------------
+
+site:  https://sca.ksr.ch/doku.php?id=telecommunications:start
+
+# Telekommunikation TALIT-Projekt 2025
+[[telecommunications:telegraph|Kapitel 1: Der Telegraph]] 
+[[telecommunications:pager|Kapitel 2: Der Funkrufempfänger (Pager)]] 
+[[telecommunications:sources|Kapitel 3: Quellen]]
+
+
+--------------------------------------------------------------------------------------------
+
+site:  https://sca.ksr.ch/doku.php?id=telecommunications:telegraph
+and
+site:  https://sca.ksr.ch/doku.php?id=telecommunications:pager
+and
+site:  https://sca.ksr.ch/doku.php?id=telecommunications:sources
+
+Telegraph + Pager sites:
+
+
+#TITLE //(telegraph or pager) (6 equals)
+
+##Introduction
+
+##History
+
+##Theory //maths, physics, engineering, electrostatics, circuits, etc... needed, will be explained here
+
+##How it works // here the object will be described, and thoroughly described how it works (using the theory above)
+
+##Instructions and Demonstration // Instruction manual (link to my GitHub, as the instructions will be there), on how I built the object + demonstration
+
+##Summary
+
+
+------------------------------------------------------------------------------------------------
+
+The GitHub
+
+Will only contain:
+
+- instructions
+- material list
+- prd
+- documentation
+- pictures of sketches, building, etc...
+- (videos)
+- circuits (images)
+- README
+
+All seperated into folders:
+
+Telegraph <- folder containing instructions, parts list, pics, vids, circuits of the telegraph
+Pager <- also a folder containing the same for the pager
+Documents <- folder containing everything else
+README.md <- readme file
+
+
