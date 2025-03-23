@@ -108,3 +108,12 @@ Documents <- folder containing everything else
 README.md <- readme file
 
 
+-----------------------------------------------------------------------------------------------
+
+Shopping list:
+Voltaic pile:
+- even number of thin copper and Zinc wafers or plates, about 10 Ergänzungsfach
+- thin paper wafers in salt water equal in size
+
+
+
