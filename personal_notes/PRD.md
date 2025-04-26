@@ -90,3 +90,6 @@ Sublesson: Mechanical telegraph and then electric telegraph (history, how it wor
 The mechanical telegraph doesn't have much to explain, it's simply a system of gears. If I have time, I could also build a mechanical Chappe Telegraph (3d-printed, LEGO). The mechanical needs practically no maths/physics/electrical engineering/circuit analysis explanation. Just a historical background and a nice diagram which explains it neatly. 
 Then I will explain the electric telegraph. Once again give a bit of a historical background and how it works, but here I will have to do som explaining on electrical engineering and circuit analysis. No maths and little physics. In the history I will also add som explaining on how it worked cross country, so how thes poles looked like, and how it worked across the Oceans aswell (Atlantic). This is the point where I also build my own working telegraph system, and explain, how this whol ordeal of sending a message would have played out. 
 I want to do this in the format of the Informatik Wiki, and, if allowed, host it on there as a new folder or topic called "Telecommunications". Would be cool :) 
+
+UPDATED AS OF MAY 2025:
+Replace all "Pager" with "Radio" due to the complications to be ran into when building a pager system, a radio will demonstrate it equally and on a bigger scale. I will therefore build a radio, not a pager.

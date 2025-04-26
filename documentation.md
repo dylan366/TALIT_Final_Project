@@ -7,3 +7,8 @@
 
 ## 10th of March 2025: Pilot Issue on GitHub
 - PILOT created at the bottom of the PRD
+
+## 26th of April 2025 (and many times inbetween): Parts
+- ordered parts for the telegraph and the radio
+- designed a circuit for the radio
+- 3d-printed the telegraph
