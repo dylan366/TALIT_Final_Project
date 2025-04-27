@@ -125,6 +125,15 @@ V_{total} = V_{initial} - V_{drop}
 \]
 Now we can replace all known functions and rewrite the voltage after a given length of cable as a function in terms of the length of cable
 \[
+V_{total}(L)=V_{initial} - R_{wire} \cdot I_{required}
+\]
+\[
+V_{total}(L)=V_{initial} - R_{wire}(L) \cdot I_{required}    
+\]
+\[
+V_{total}(L)=V_{initial} - (\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}) \cdot I_{required}
+\]
+\[
 V_{total}(L)=V_{initial}-\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}\cdot I_{required}
 \]
 Below is a picture of a graph of that function using following values for the constants:
@@ -136,6 +145,10 @@ $V_{initial}=20V$
 As you can see after about 37.5km the voltage will have reached zero. Lets add a relay at the 10km and 20km mark.
 ![function with relays](function_with_relay.png)
 The relay boosts the voltage up and refreshes the circuit again basically. With just two relays the cable now can reach up to almost 60km. Adding relays after 10km was slight overkill as we have barely lost a quarter of the original voltage, but the idea gets demonstrated well enough.
+
+As mentioned previously the telegraph works both ways, but relay stations only work one way. So adding a parallel but switched relay kind of solves this problem. However we can manage to make an infinite cycle like this. Which is why we need to add diodes and NC-relays (normally closed) to prevent electrcitiy from going back the way it came. Below is a circuit schematic showing a two way telegraph, where both cities can send and recieve messages. If they want to send, they need to have their sounder toggle switch open, but it needs to always be closed otherwise, or else they won't recieve any messages. The middle part is the largest and most complex of the telegraph system. That is a relay station and is comprised of two NO-relays (normally open) responsible for repeating the signal with a new battery, and diodes and NC-relays (normally closed) to create a one-way path for the electrcitiy and guide it through the cables it needs to go. 
+Since the website didn't have the specific components, for the sounder I used the buzzer (that big semi-circle).
+![alt text](twoway_telegraph_circuit.png)
 
 ## The transatlantic cable
 In 1858 a telegraph cable was laid under the Atlantic Ocean connecting Valentia Island near Ireland with Newfoundland in Canada. The cable consisted of a copper wire 1.4mm in diameter covered in an insulation of gutta-percha, a type of rubber, and that was then surrounded by a thick layer of steel wire armour to protect it from the seabed. It weighted 2.5 tons per kilometer and was about 4'000km long. The cable was carried on coils upon two different ships due to the size and weight, and was rolled out using these along the Telegraph Plateau, a flat part of the Ocean designated ideal for cable-laying by oceanographers. The telegraph was run on relatively high voltage, but not too much was necessary, since the cable was quite thick. It didn't have relay stations and failed often due to corrosion and signal degradation. However it is considered a marvel of engineering for humans. 
