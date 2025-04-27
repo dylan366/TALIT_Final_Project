@@ -34,16 +34,16 @@ Of course a telegraph, like pretty much everything else on this planet, comes wi
 As we read in the previous "How it works" chapter, we know that an electrical pulse for the code is sent as soon as the key is pressed downwards. The battery connected basically now has a road without distruptions towards the Ground, even though the ground is located many miles away. The voltage of the battery does in fact make a difference, and we will see why now. For a distance of 5km, a 3-5V battery will do just fine, however a 100V battery is complete overkill. On the other hand, for a distance of 2000km, a battery of 3-5V is not nearly enough, even a 100V battery is probably too weak. 
 
 We will start with the basics. In a simple circuit consisting of a battery, a wire and a consumer, we have the simple formula of Ohm's Law:    
-\[
-U = R \cdot I
-\]   
+$ U = R \cdot I $  
 where $U$ is the voltage supplied by the battery, $R$ is the resistance of the consumer and $I$ is the current flowing in the circuit. 
 When the telegraph key is pressed down, the entire system is nothing more of a simple circuit with a battery, a button, wire, and a light bulb or a buzzer or some other mechanism on the other side that uses the electricity to signify a message. 
 In small circuits, wire resistance is practically none, however over many kilometers, the wire adds a significant resistance to the circuit, which drops the voltage significantly over distance. We can calculate the resistance of the wire using this formula:  
-\[
+
+$
 R_{\text{wire}} = \rho \cdot \frac{L}{A}
-\]
- $\rho$ is the resistivity of the wire material (measured in ohm meters, in copper wires it is about $1.7 \cdot 10^{-8}  \Omega \cdot m $)  
+$
+
+$\rho$ is the resistivity of the wire material (measured in ohm meters, in copper wires it is about $1.7 \cdot 10^{-8}  \Omega \cdot m $)  
 $L$ is the length of the wire
 $A$ is the cross-sectional area of the wire in $m^2$
 Let us visualise this with an example. City A wants to communicate with City B using a telegraph. City B has a sounder that needs a minimum of 3V to operate. Historically, a sounder needed between 20 and 50mA to operate aswell. So we will go with 25mA. The two cities are seperated by 20km and the telegraph runs with a copper wire with a 1mm diameter. To calculate the ideal voltage the battery should have at City A, lets first calculate the voltage drop (aka the lost voltage due to wire restistance) over this distance.  
@@ -55,25 +55,23 @@ Since it's so expensive and only slightly better we will stick with copper wires
 Now we come to a new problem. It comes to a point where you can't increase the voltage, or simply can't increase the wire thickness for some reason. If only we could prevent the voltage drop somewhere along the wire or completely reset the electrical signal? Well lucky for us there is in fact an electrical component that does just that. It's called a "Relay" or "Relay switch" and basically acts like an electrically activated button, that, when electric current flows through it, activates an electromagnet that pulls a metal object to it, closing a new circuit with an entirely new battery basically reseting the circuit again. It extends the signal strength and resets the lost voltage due to resistance. A relay basically turns one circuit into multiple smaller ones, each with a new voltage source of their own.
 We can calculate a bunch of things with this, but first let's derive some new formulas.
 Define a maximum allowable voltage drop as a percentage $k$. 
-\[
-V_{drop}=k\cdot V_{initial}
-\]
+
+$ V_{drop}=k\cdot V_{initial} $
+
 where $k$ is a fraction for example 20% e.g. 0.2 that represents the maximum voltage that can be lost due to cable resistance before we need to "up" it again using a relay.
 We also know that $V_{drop}$ is defined as 
 $V_{drop}=R_{cable}\cdot I$ 
 $=\frac{\rho L}{A} \cdot I$
 as written above. We can set the two equal and solve for L.
-\[
-k\cdot V_{initial}=\frac{\rho L}{A}\cdot I
-\]
-\[
-L_{max}=\frac{k\cdot V_{initial} \cdot A}{\rho \cdot I}
-\]
+
+$ k\cdot V_{initial}=\frac{\rho L}{A}\cdot I $
+
+$ L_{max}=\frac{k\cdot V_{initial} \cdot A}{\rho \cdot I} $
 
 I will define this as the working distance. It simply spits out the length in metres before the battery falls under the minimum required voltage due to cable resistance. You could also not use a maximum voltage loss as a percentage, but simply define it as a fixated minimum voltage, below which it should not fall.
-\[
-L_{\text{max}} = \frac{(U_{\text{source}} - U_{\text{min}}) \cdot A}{\rho \cdot I}
-\]
+
+$ L_{\text{max}} = \frac{(U_{\text{source}} - U_{\text{min}}) \cdot A}{\rho \cdot I} $
+
 $U_{min}$ is the minimum require voltage the sounder in City B requires. 
 
 It is best to use the same voltage source in each relay and also the same one as used in the key originally. But of course you can change this, you would just have to recalculate everything for every bit of distance between two voltage sources.
@@ -84,60 +82,54 @@ $U_{min} = 3\text{V}$
 $I = 0.025 \text{A}$
 we will give City A a 20V battery to work with. The wire is made of copper, to keep it realistic.
 With a simple calculation of the voltage drop from a formula mentioned further up:
-\[
-R_{wire} = \rho \cdot \frac{L_{total}}{\pi r_{wire}^2}
-\]
-\[
-R_{wire} = 1.7\cdot 10^{-8} \cdot \frac{90000}{\pi \cdot 0.0005^2} = 1948.1 \Omega 
-\]
-\[
-U_{drop} = R \cdot I
-\]
-\[
-U_{drop} = 1948.1 \Omega \cdot 0.025 \text{A} = 48.7\text{V}
-\]
+
+$ R_{wire} = \rho \cdot \frac{L_{total}}{\pi r_{wire}^2} $
+
+$ R_{wire} = 1.7\cdot 10^{-8} \cdot \frac{90000}{\pi \cdot 0.0005^2} = 1948.1 \Omega $
+
+$ U_{drop} = R \cdot I $
+
+$ U_{drop} = 1948.1 \Omega \cdot 0.025 \text{A} = 48.7\text{V} $
+
 We will lose 48.7V of our original 20V, which of course means we will completely lose all of our voltage and the sounder in City B will not work. This telegraph system definitely needs some relay stations. Each relay will be fitted with the same battery as the original, so 20V. 
 Lets calculate every how many kilometers we need to place one. We will use this formula: 
-\[
-L_{max} = \frac{(U_{relay} - U_{min})\cdot A_{wire}}{\rho \cdot I}
-\]
-\[
-L_{max}=\frac{(20\text{V}-3\text{V})\cdot \pi \cdot 0.0005^2}{1.7\cdot 10^{-8}\cdot 0.025 \text{A}} = 31415 \text{m} = 31.4\text{km}  
-\]
+
+$ L_{max} = \frac{(U_{relay} - U_{min})\cdot A_{wire}}{\rho \cdot I} $
+
+$ L_{max}=\frac{(20\text{V}-3\text{V})\cdot \pi \cdot 0.0005^2}{1.7\cdot 10^{-8}\cdot 0.025 \text{A}} = 31415 \text{m} = 31.4\text{km} $
+
 We need to place a relay station every 31.4km to ensure that the sounder in city B gets activated. Ideally we want even more voltage in city B, since this formula gave us the minimum theoretical distance under ideal conditions. At the end we should get a voltage of 5.3V which is good for our minimum needed voltage of 3V.
 
 ## The Maths
 Let's summarise all previous formulas and also rewrite them as mathematical functions for easier use.
 Since we now know that
-\[
-R_{wire}=\rho_{material}\cdot \frac{L_{wire}}{A_{wire}} =\rho_{material}\cdot \frac{L_{wire}}{\pi r_{wire}^2}
-\]
+
+$ R_{wire}=\rho_{material}\cdot \frac{L_{wire}}{A_{wire}} =\rho_{material}\cdot \frac{L_{wire}}{\pi r_{wire}^2} $
+
 we can rewrite this as a function of the length. The function takes in the length of the cable and outputs the total resistance the cable has.
-\[
-R(L)=\rho \cdot \frac{L}{A}
-\]
+
+$ R(L)=\rho \cdot \frac{L}{A} $
+
 where $\rho$ and $A$ are constants.
 Furthermore we know that the voltage drop can be calculated by 
-\[
-V_{drop} = R_{wire} \cdot I_{required}    
-\]
+
+$ V_{drop} = R_{wire} \cdot I_{required} $
+
 therefore the total voltage after a specific length of cable is
-\[
-V_{total} = V_{initial} - V_{drop}
-\]
+
+$ V_{total} = V_{initial} - V_{drop} $
+
 Now we can replace all known functions and rewrite the voltage after a given length of cable as a function in terms of the length of cable
-\[
-V_{total}(L)=V_{initial} - R_{wire} \cdot I_{required}
-\]
-\[
-V_{total}(L)=V_{initial} - R_{wire}(L) \cdot I_{required}    
-\]
-\[
-V_{total}(L)=V_{initial} - (\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}) \cdot I_{required}
-\]
-\[
-V_{total}(L)=V_{initial}-\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}\cdot I_{required}
-\]
+
+$ V_{total}(L)=V_{initial} - R_{wire} \cdot I_{required} $
+
+
+$ V_{total}(L)=V_{initial} - R_{wire}(L) \cdot I_{required} $
+
+$ V_{total}(L)=V_{initial} - (\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}) \cdot I_{required} $
+
+$ V_{total}(L)=V_{initial}-\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}\cdot I_{required} $
+
 Below is a picture of a graph of that function using following values for the constants:
 $\rho = 1.68\cdot 10^{-8} \Omega\cdot m $
 $r_{wire}=0.0005m=0.5mm$
