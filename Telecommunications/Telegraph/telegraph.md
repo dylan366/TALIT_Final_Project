@@ -104,5 +104,38 @@ L_{max}=\frac{(20\text{V}-3\text{V})\cdot \pi \cdot 0.0005^2}{1.7\cdot 10^{-8}\c
 \]
 We need to place a relay station every 31.4km to ensure that the sounder in city B gets activated. Ideally we want even more voltage in city B, since this formula gave us the minimum theoretical distance under ideal conditions. At the end we should get a voltage of 5.3V which is good for our minimum needed voltage of 3V.
 
+## The Maths
+Let's summarise all previous formulas and also rewrite them as mathematical functions for easier use.
+Since we now know that
+\[
+R_{wire}=\rho_{material}\cdot \frac{L_{wire}}{A_{wire}} =\rho_{material}\cdot \frac{L_{wire}}{\pi r_{wire}^2}
+\]
+we can rewrite this as a function of the length. The function takes in the length of the cable and outputs the total resistance the cable has.
+\[
+R(L)=\rho \cdot \frac{L}{A}
+\]
+where $\rho$ and $A$ are constants.
+Furthermore we know that the voltage drop can be calculated by 
+\[
+V_{drop} = R_{wire} \cdot I_{required}    
+\]
+therefore the total voltage after a specific length of cable is
+\[
+V_{total} = V_{initial} - V_{drop}
+\]
+Now we can replace all known functions and rewrite the voltage after a given length of cable as a function in terms of the length of cable
+\[
+V_{total}(L)=V_{initial}-\rho_{material}\cdot \frac{L}{\pi r_{wire}^2}\cdot I_{required}
+\]
+Below is a picture of a graph of that function using following values for the constants:
+$\rho = 1.68\cdot 10^{-8} \Omega\cdot m $
+$r_{wire}=0.0005m=0.5mm$
+$I_{required}=0.025A=25mA$
+$V_{initial}=20V$
+![raw function](raw_graph_function.png)
+As you can see after about 37.5km the voltage will have reached zero. Lets add a relay at the 10km and 20km mark.
+![function with relays](function_with_relay.png)
+The relay boosts the voltage up and refreshes the circuit again basically. With just two relays the cable now can reach up to almost 60km. Adding relays after 10km was slight overkill as we have barely lost a quarter of the original voltage, but the idea gets demonstrated well enough.
+
 ## The transatlantic cable
 In 1858 a telegraph cable was laid under the Atlantic Ocean connecting Valentia Island near Ireland with Newfoundland in Canada. The cable consisted of a copper wire 1.4mm in diameter covered in an insulation of gutta-percha, a type of rubber, and that was then surrounded by a thick layer of steel wire armour to protect it from the seabed. It weighted 2.5 tons per kilometer and was about 4'000km long. The cable was carried on coils upon two different ships due to the size and weight, and was rolled out using these along the Telegraph Plateau, a flat part of the Ocean designated ideal for cable-laying by oceanographers. The telegraph was run on relatively high voltage, but not too much was necessary, since the cable was quite thick. It didn't have relay stations and failed often due to corrosion and signal degradation. However it is considered a marvel of engineering for humans. 
