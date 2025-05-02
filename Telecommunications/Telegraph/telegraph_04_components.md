@@ -13,16 +13,10 @@ To understand how every battery works some chemistry is required. In this sub-ch
 
 #### Instructions:
 First, dip the paper or felt circles into the cup of salt water until they are completely wet. Then lay them out on a paper towl to dry for a bit. They don't need to be dry completely, just let them be for a minute or two until they are only slightly moist. 
-Place all the stuff in the following order: Copper, felt, aluminium. And repeat with felt in between until you place your final aluminium or zinc item on top. You should have a "pile" of copper, felt or paper, and aluminium or zinc, in repeating order. 
+Place all the stuff in the following order: Copper, felt, aluminium. And repeat until you place your final aluminium or zinc item on top. You should have a "pile" of copper, felt or paper, and aluminium or zinc, in repeating order. 
 Now you can take a multimetre and measure the voltage across the battery. I made 3 piles, so I did the order of copper-felt-aluminium 3 times and with that I measured a voltage of about 1.5 Volts.
 There we go, we built a battery just like Alessandro Volta did over 200 years ago! 
 
-### How it works
-Lets look at the individual components:
-Cathode: the copper, 
-Anode: the aluminium or Zinc
-Electrolyte: The salt water soaked felt
-
-Copper is less precious than Aluminium, as they say in Chemistry. This means that copper doesn't give away electrons as easily as aluminium does. 
-The copper coin has the chemical formula: $\text{Cu}^{2+}$ which means it wants to recieve electrons.
-The Aluminium foil has the chemical formula: $\text{Al}$ which means it's neutral and can give or recieve electrons. In this connected system therefore Aluminium gives off electrons to Copper. We say that the Aluminium **oxidizes** (because it gives) and Copper **reduces** (beacuse it recieves). 
+Each cell produced around 0.5V for me and in series you can just multiply this. I stacked 3 of these cells on top of eachother and when I measured the final voltage I reached a value of approximately 1.5V. This is by far not enough to power a multiple kilometre long telegraph but stacking many of these on top of eachother then it would work perfectly.
+Due to the chemical reaction a layer of oxidized metal would form on the Copper and one day the battery would stop working because the copper coin is covered by a non-conductive layer. 
+Also, the current is extremely weak within this battery, you would have to charge up a suitable capacitor to get a usable current. It has a low current because the material in the voltaic cell have very high internal resistance.
