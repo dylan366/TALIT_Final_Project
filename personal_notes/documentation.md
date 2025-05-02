@@ -12,3 +12,11 @@
 - ordered parts for the telegraph and the radio
 - designed a circuit for the radio
 - 3d-printed the telegraph
+
+## 2nd of May 2025: Parts order and text clear-up
+- some parts have arrived, still waiting for one more delivery
+- built a battery and took photos
+- split the telegraph chapter into sub-chapters
+- cleaned up the sub-chapters
+- added the images
+- started research on the radio
