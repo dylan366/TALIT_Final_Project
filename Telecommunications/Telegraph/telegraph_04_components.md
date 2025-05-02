@@ -20,3 +20,17 @@ There we go, we built a battery just like Alessandro Volta did over 200 years ag
 Each cell produced around 0.5V for me and in series you can just multiply this. I stacked 3 of these cells on top of eachother and when I measured the final voltage I reached a value of approximately 1.5V. This is by far not enough to power a multiple kilometre long telegraph but stacking many of these on top of eachother then it would work perfectly.
 Due to the chemical reaction a layer of oxidized metal would form on the Copper and one day the battery would stop working because the copper coin is covered by a non-conductive layer. 
 Also, the current is extremely weak within this battery, you would have to charge up a suitable capacitor to get a usable current. It has a low current because the material in the voltaic cell have very high internal resistance.
+![Preperation](images/battery_photo_1.jpg) Image 1: Preparing the felt in salt water.
+
+![Preperation](images/battery_photo_2.jpg) Image 2: All material lain out.
+
+![Building](images/battery_photo_3.jpg) Image 3: Put Copper coin, then salt-water-felt, then aluminium foil in a plastic tube. The tube has a small hole on the bottom. 
+
+![Cable](images/battery_photo_4.jpg) Image 4: Inserted a conductive cable into the plastic tube's bottom hole so that it touches the bottom Copper coin. Added another 2 voltaic piles. 
+
+![Cable](images/battery_photo_5.jpg) Image 5: Added a second cable through the top opening of the plastic cylinder. This cable must touch the top aluminium foil. 
+
+![Setup](images/battery_photo_6.jpg) Image 6: Full setup of what we have now. 3 Voltaic piles piled above eachother in a plastic cylinder connected by cables on both sides - just like a battery!
+
+![Measuring](images/battery_photo_7.jpg) Image 7: Measured the voltage across the battery by connecting a Multimetre to the two cables. The final voltage was about 1.5V. 
+
