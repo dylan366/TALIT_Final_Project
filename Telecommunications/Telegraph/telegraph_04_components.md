@@ -45,7 +45,9 @@ After following the previous steps you should have something that looks like thi
 #### Step 7
 <img src="images_script/battery_photo_7.jpg" width="100"> 
 
-Now we can measure the voltage in our battery. We had 3 piles and the multimetre shows us a value of 1.5V across the entire battery. Therefore one of our piles gives us around 0.5 Volts. Though, this battery probably won't work in a circuit, since it has a very big internal resistance (the coins and the felt) which means it will have a very low current.
+Now we can measure the voltage in our battery. We had 3 piles and the multimetre shows us a value of 1.5V across the entire battery. Therefore one of our piles gives us around 0.5 Volts. Though, this battery probably won't work in a circuit, since it has a very big internal resistance (the coins and the felt) which means it will have a very low current. 
+(In the formula $ V=R\cdot I$ 
+if $R$ is very large then $I$ must be very small to keep the $V$ constant in the closed system)
 There we go, we have just built a battery just like Alessandro Volta did over 200 years ago! 
 
 
