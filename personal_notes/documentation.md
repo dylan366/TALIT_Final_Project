@@ -20,3 +20,7 @@
 - cleaned up the sub-chapters
 - added the images
 - started research on the radio
+
+## 3rd of May 2025: Building the telegraph
+- parts arrived -> started building!
+- Telegraph 90% finished, just need to saw the plank and nail everything together and add a long connecting cable and batteries
