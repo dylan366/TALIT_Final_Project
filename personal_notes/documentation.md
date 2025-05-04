@@ -23,4 +23,5 @@
 
 ## 3rd of May 2025: Building the telegraph
 - parts arrived -> started building!
+- took photos
 - Telegraph 90% finished, just need to saw the plank and nail everything together and add a long connecting cable and batteries
