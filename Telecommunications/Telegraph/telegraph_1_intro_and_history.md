@@ -14,6 +14,7 @@ Here a short timeline of important events in the history of the telegraph:
 - 1836 - Edward Davy invented a better relay switch in the UK  
 - 1837 - Cooke and Wheatstone of the UK invented a better telegraph with 5 needles pointing to a letter  
 - 1837 - Samuel Morse invents the sound based encoding system "Morse Code" and uses it in his own telegraph   
+  
 <img src="images_script/telegraphy_timeline.png">
 The device itself was never a dificult thing to make, what made it challenging was figuring out a way of converting messages into electricity.
 Some inventions used 26 wires for one line, others used 5 for binary representation.  
