@@ -22,7 +22,7 @@ Let us visualise this with an example. City A wants to communicate with City B u
 To calculate $R_{wire}$, we can simply plug in all our values into the formula given above. $R_{wire} = 1.7 \cdot 10^{-8} \cdot \frac{20000m}{\pi \cdot 0.0005^2m^2}$ 
 Calculating this gives us a total resistance of $432.9 \Omega$ . 
 Now we can calculate the voltage drop using ohm's law. $V_{drop} = 432.9 \Omega \cdot 0.025A$ which equals to $10.8V$. So over this distance, the cable will result in the sounder (City B) recieving 10.8 Volts less than what the battery in City A supplies. Knowing that the sounder needs atleast 3V to activate, we can just add that to the voltage drop and figure out the minimum voltage our battery in City A needs to supply. $10.8 + 3 = 13.8$ V . Of course there's also some other natural phenomena like ground resistance, the connections of the wires having resistance, etc... So using the bare minimum of 13.8V probably still won't work realistically, since these formula all assume ideal conditions. Using two 9V batteries in series, equaling 18V in total, should do the trick in this example setup. 
-![resistivity](resistivitytable.png)
+<img src="images_script/resistivitytable.png">
 Above is a table with materials and their respective resisitivity, aka how much resistance they have over distance. 
 Silver would be better, but since it's so expensive and only slightly better, copper is best. 
 
@@ -113,9 +113,9 @@ $\rho = 1.68\cdot 10^{-8} \Omega\cdot m $ (copper wire)
 $r_{wire}=0.0005m=0.5mm$
 $I_{required}=0.025A=25mA$
 $V_{initial}=20V$
-![raw function](raw_graph_function.png)
+<img src="images_script/raw_graph_function.png">
 After about 37.5km the voltage will have reached zero. Lets add a relay at the 10km and 20km mark.
-![function with relays](function_with_relay.png)
+<img src="images_script/function_with_relay.png">
 The relay boosts the voltage up and refreshes the circuit again basically. With just two relays the cable now can reach up to almost 60km. Adding relays after 10km was slight overkill as we have barely lost a quarter of the original voltage, but the idea gets demonstrated well enough.
 
 I hope this chapter illustrated the importance of a relay station.  
