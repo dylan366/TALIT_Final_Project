@@ -25,3 +25,13 @@
 - parts arrived -> started building!
 - took photos
 - Telegraph 90% finished, just need to saw the plank and nail everything together and add a long connecting cable and batteries
+
+## June 2025: Telegraph finished
+- finished everything to do with the telegraph
+  
+## 27th of July 2025: Built radio
+- radio-telegraph finished building (nothing fancy, no case, just the radio)
+- in language exchange without my electronics 
+- continueing to write this documentation in France
+  
+## 
