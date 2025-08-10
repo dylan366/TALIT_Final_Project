@@ -1,10 +1,20 @@
-## How it works
-A radio only needs two things: A transmitter and a receiver. A transmittor creates radio waves and encodes them with the data we want to send, for example a song. The receiver catches these waves and decodes the information. The receiver is then connected to an output device which can then show us the message in the waves. Some output devices include loudspeakers, headphones or screens. This is of course worded very simply and we will go into more detail later.
-To understand how a radio works, I will explain both the transmitter and receiver seperately in two seperate pages. Like that I will also combine the theory with the calculations behind it, as seperating these two would overcomplicate things. But first, I will give a quick introduction to radio waves.
+## How It Works
+A radio system only needs two essential parts: a transmitter and a receiver. 
+- The transmitter creates radio waves and encodes them with the data we want to send — for example, spoken words or Morse code.
+- The receiver captures those waves and decodes the information.
+- The decoded signal is then sent to an output device such as a loudspeaker, headphones, or even a screen.
+- 
+This is a very simplified view — we’ll dive into the details later. For now, let’s start with the basics of radio waves themselves.
 
-A radio uses, as the name suggests, radio waves to communicate. Radio waves are waves within the electromagnetic spectrum, just like x-xray waves in medical devices, gamma waves in radiation, or visible light waves, which allow us to see the world. That's right, light, how we see it, is on the exact spectrum as the waves used during a phone call. Had our eyes evolved differently, we could see these radio waves too. But our eyes can only detect waves with the wavelength between 380 to 700 nanometres. Radiowaves have the wave length of many metres and reach much further, but therefore can't be detected by such a fragile organ like the human eye. 
+As the name suggests, radios use radio waves to communicate. Radio waves are part of the electromagnetic spectrum, the same family of waves that includes X-rays (used in medical imaging), gamma rays (from radioactive sources), infrared light (heat), and visible light (what our eyes can detect).
+In fact, visible light is just another kind of electromagnetic wave, but with much shorter wavelengths - between about 380 and 700 nanometres. Radio waves have much longer wavelengths, sometimes many meters long. Because of that, they can travel much farther than visible light, but our eyes can’t detect them. If our vision were tuned differently, we might literally see radio broadcasts around us.
 
-These radio waves get manipulated, either by constantly changing the frequency or by constantly changing the amplitude of the wave, to send information. We will look at this system right now, but we will keep it at a basic level, as the radio I built could only send morse-code anyway, and could barely send louder things like my voice. 
+On their own, plain radio waves don’t carry useful information, they’re just a wave in the electromagnetic field. To send data, we have to modulate them, that is, change some property of the wave in a controlled way.
+There are two main approaches:
+- Amplitude Modulation (AM): The height (amplitude) of the wave is varied while the frequency stays constant.
+- Frequency Modulation (FM): The frequency of the wave changes while the amplitude stays constant.
+
+The names "AM radio" and "FM radio" come from these methods. In this project, we’ll focus on AM, because it’s simpler to build with basic components. My homemade radio could only transmit Morse code reliably, and only faintly transmit louder sounds like blowing into a microphone.
 
 ## Radio transmission
 The radio transmitter is the part of a radio system that does the following things:
