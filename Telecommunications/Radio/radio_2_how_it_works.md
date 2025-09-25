@@ -1,33 +1,100 @@
 ## How It Works
-A radio system only needs two essential parts: a transmitter and a receiver. 
-- The transmitter creates radio waves and encodes them with the data we want to send — for example, spoken words or Morse code.
+A radio system only needs two essential parts: **a transmitter** and **a receiver**. 
+- The transmitter creates radio waves and encodes them with the data we want to send - for example, spoken words or Morse code.
 - The receiver captures those waves and decodes the information.
-- The decoded signal is then sent to an output device such as a loudspeaker, headphones, or even a screen.
-- 
-This is a very simplified view — we’ll dive into the details later. For now, let’s start with the basics of radio waves themselves.
+- The decoded signal is then sent to an output device such as a loudspeaker, headphones, or a screen.
+  
+This is a very simplified view - we’ll dive into the details later. For now, let’s start with the basics of radio waves themselves.
 
-As the name suggests, radios use radio waves to communicate. Radio waves are part of the electromagnetic spectrum, the same family of waves that includes X-rays (used in medical imaging), gamma rays (from radioactive sources), infrared light (heat), and visible light (what our eyes can detect).
-In fact, visible light is just another kind of electromagnetic wave, but with much shorter wavelengths - between about 380 and 700 nanometres. Radio waves have much longer wavelengths, sometimes many meters long. Because of that, they can travel much farther than visible light, but our eyes can’t detect them. If our vision were tuned differently, we might literally see radio broadcasts around us.
+As the name suggests, radios use **radio waves** to communicate. Radio waves are part of the **electromagnetic spectrum**, the same spectrum of waves that includes X-rays (used in medical imaging), gamma rays (from radioactive sources), infrared light (heat), and visible light (what our eyes can detect).
+In fact, visible light is just another kind of electromagnetic wave, but with much shorter wavelengths - between about 380 and 700 nanometres. Radio waves have much longer wavelengths, sometimes kilometers long. Because of that, they can travel much farther than visible light, but our eyes can’t detect them. If our vision were tuned differently, we might literally see radio broadcasts around us.
 
-On their own, plain radio waves don’t carry useful information, they’re just a wave in the electromagnetic field. To send data, we have to modulate them, that is, change some property of the wave in a controlled way.
-There are two main approaches:
-- Amplitude Modulation (AM): The height (amplitude) of the wave is varied while the frequency stays constant.
-- Frequency Modulation (FM): The frequency of the wave changes while the amplitude stays constant.
+The most important formula to connect wavelengths to their speed and frequncy is the following:
 
-The names "AM radio" and "FM radio" come from these methods. In this project, we’ll focus on AM, because it’s simpler to build with basic components. My homemade radio could only transmit Morse code reliably, and only faintly transmit louder sounds like blowing into a microphone.
+$c=\lambda f$
 
-## Radio transmission
-The radio transmitter is the part of a radio system that does the following things:
-- Create a stable, constant wave without any changes - just the wave nothing else
-- Connect to an input device that gives the information that needs to be sent
-- Takes the information and manipulates the stable wave with it, encoding the wave with data.
+where:
+- $c$ = wave velocity (always $\approx 300'000'000 m/s$ for electromagnetic waves.)
+- $\lambda$ (lambda) = wavelength in meters
+- $f$ = frequency in Hertz (Hz), or cycles per second
 
-Creating a wave is easy. As the name suggests (electromagnetic wave), we need to somehow create changing electric fields and magnetic fields and in combination these two propagate a combined wave. The device to create an electromagnetic wave is called an oscillator. This name just means "back and forth" because that's what a wave, and the current in the circuit, do. This constant back-and-forth changing causes constant changes in electric and magnetic fields, hence creating a wave. The simplest oscillator is called an LC oscillator (L for inductance and C for capacitance) shown here:
+<img src="images_script\Electromagnetic-Spectrum.png" width="500"> 
 
-Charging up the capacitor beforehand creates an electric field within. Upon closing the circuit, the current from the capacitor enters the inductor from one end, creating a magnetic field. This magnetic field in turn influences the electric field and therefore increases the electric field energy inside the capacitor. Now we're back at square one and this all (capacitor empties and electric field energy increases -> inductor fills up and magnetic field increases, electric field decreases -> electric field increases, magnet field decreases -> inductor empties, capacitor fills up), repeats until all energy is expended. This simple oscillator doesn't build up or anything, which means that due to resistance the waves get smaller and smaller after each turn and die out after some time. 
+## Making a Radio Wave
+Plain radio waves don’t carry information; they’re just repeating oscillations. To create them, the simplest circuit is the **LC oscillator**.  
 
-Using transistors we can rebuild the waves and have a true steady wave, though this requires additional power supply.
+- **L** = inductor (a coil of wire)  
+- **C** = capacitor (stores charge)  
 
-Now, using this created wave we can take some input wave (which is the information we want to send) and encode the carrier wave with the input wave. The wave created will be the wave that gets propagated through the air towards the receiver. 
+$f=\frac{1}{2\pi \sqrt{LC}}$
 
+- $f$ = frequency (Hz)
+- $L$ = inductance (Henries, H)
+- $C$ = capacitance (Farads, F)
 
+This oscillation is the **carrier wave**. 
+
+<img src="images_script\lc-oscillator-circuit.jpg" width="300"> 
+
+There is a problem though: The oscillation slowly dies out because of resistance and heat (= energy loss). The solution is to "feed back" some of this energy using transistors. 
+
+## Modulation
+A plain sine wave doesn't hold any information. To really be able to give the wave some data, we need to **modulate** it. This means we change a property of the wave in a controlled way.
+Here the two most common ones are shown.
+
+### Amplitude Modulation (AM)
+- The **height** (amplitude) of the carrier wave changes whilst the frequency stays constant.
+- Very easy to do. First radios used this method.
+  
+### Frequency Modulation
+- The **frequency** of the wave shifts up and down whilst the amplitude stays constant.
+- Much harder to achieve. Difficult to build yourself.
+  
+The names "AM radio" and "FM radio" come from these methods. In this project, we’ll focus on AM, since it’s simpler to build with basic components. 
+
+This animation shows how AM and FM encoding works really neatly. The modulator is the wave we want to send. For example, this could be your voice in a microphone.
+- It is very uneven and has changing amplitude and frequency.
+- The carrier is the wave generated by the oscillator. It is constant at all times.
+- To transmit the modulator, we need to  combine it with the carrier wave (which will carry our data)
+  
+<img src="images_script\9534325_orig.gif" width="300"> 
+
+## Frequency Bands
+Different ranges of frequencies have special names:
+- **AM Radio:** around 500 kHz - 1.6 MHz (Medium Frequency Band)
+- **FM Radio:** 87.5 - 108 Mhz (Very High Frequency Band)
+- Other ranges: Very Low Frequency, Low Frequency, Medium Frequency (AM), High Frequency, Very High Frequency (FM), Ultra High Frequency, Super High Frequency, and Extremely High Frequency.
+
+Even the “Extremely High Frequency” band (EHF) is still only a few hundred gigahertz - far too low for our eyes to detect (we’d need hundreds of terahertz, since our eyes can only detect waves in the range of 380 to 800 nm).  
+
+<img src="images_script\radio-frequency-bands.png" width="500">  
+
+FM waves are between 87.5 and 108 MHz and are therefore classified as Very High Frequency waves, or VHF for short. Other classifications are Very Low Frequency, Low Frequency, Medium Frequency, High Frequency, Very High Frequency, Ultra High Frequency, Super High Frequency, and Extremely High Frequency. Remember, even though it's called "Extremely High Frequency", it is still only a few hundred Gigaherz. 
+Converting that to wave length using the first formula above:
+$\lambda = \frac{c}{300\cdot 10^9}$ 
+$\lambda = 0.001m = 1mm$
+Still far too long for our eyes to detect. (Reminder: Our eyes can only detect waves between 380 to 700 nanometers)
+
+<img src="images_script\radio-frequency-bands.png" width="500"> 
+
+## Radio Receiving
+Now we have a transmitter sending out modulated waves carrying our data. But how do we catch them? And how can we read what these waves are carrying for us?  
+
+The waves we created with the encoded data before now got sent into free space and nothing can stop them. Their energy can spread out and at some point they become undetectably weak, but they never truly die. Now, how do we convert our modulated carrier wave back into something we can understand?
+
+### Antennas
+- Metals have free electrons that can move easily.  
+- A passing radio wave pushes those electrons back and forth, creating a tiny alternating current.  
+- A tuned circuit (LC) selects just the frequency we want and ignores the rest. (Otherwise we would give everysingle radio wave to the output device -> we wouldn't understand anything)
+
+### Detecting AM
+Remember, AM waves have a varying amplitude. But when an antenna picks them up, they become an alternating current with positive and negative parts. This is because we doubled the wave before transmitting it. We only need the positive part to recover the information. Which means we need to halve the wave again to go back to its original state.
+Luckily for us, there is this electrical component that only allows current in one direction: The Diode. After the diode, the current matches the original shape of the data wave.
+This can now be sent on to a loudspeaker or any other output device. 
+This type of radio receiver - having just an antenna, an inductor and capacitor, a diode, and an output device - is called a crystal radio. This comes from its given name in the earlier days of radio, when they really used a crystal rock as a diode.
+
+<img src="images_script\Circuit_diagram_of_a_crystal_radio_receiver.svg.png
+" width="500"> 
+In a process called **tuning**, we change the capacitance and inductor, so that their frequency (calculated with the same formula above) matches the one from the radio transmitter. 
+
+I hope this chapter has explained how a radio works in an easy way. In the next chapter, I will show you how I built my own simple radio transmitter and will explain it in much greater detail than this chapter.
