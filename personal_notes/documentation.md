@@ -34,4 +34,7 @@
 - in language exchange without my electronics 
 - continueing to write this documentation in France
   
-## 
+## 26th of September 2025: Finishing touches
+- Finished the radio transmitter - souldered and everything
+- finishing up the documents online
+- thinking about how I can best present this

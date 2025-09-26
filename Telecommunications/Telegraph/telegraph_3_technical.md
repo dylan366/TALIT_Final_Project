@@ -116,7 +116,7 @@ $V_{initial}=20V$
 <img src="images_script/raw_graph_function.png">
 After about 37.5km the voltage will have reached zero. Lets add a relay at the 10km and 20km mark.
 <img src="images_script/function_with_relay.png">
-The relay boosts the voltage up and refreshes the circuit again basically. With just two relays the cable now can reach up to almost 60km. Adding relays after 10km was slight overkill as we have barely lost a quarter of the original voltage, but the idea gets demonstrated well enough.
+The relay boosts the voltage up and basically refreshes the circuit again. With just two relays, the cable now can reach up to almost 60km. Adding relays after 10km was slight overkill as we have barely lost a quarter of the original voltage, but the idea gets demonstrated well enough.
 
 I hope this chapter illustrated the importance of a relay station.  
 
