@@ -79,6 +79,3 @@ Now we've built all components needed for a radio transmiter: The carrier wave g
 15. Take your finger off the button and press on it a few times to really make sure you've found your frequency. To confirm, you should be hearing the button clicks on the radio, or the static becoming louder with every press.
 16. If this is the case, take your antenna and kit away from the radio - constantly clicking on the button - until you can't hear the changes on the radio anymore. This can be the case anywhere between a few centimeters to 3 or 4 meters.
 17. Great job! You have created your own radio system and can now send morse code wirelessly across a short distance!
-
-
-

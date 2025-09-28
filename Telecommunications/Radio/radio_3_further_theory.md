@@ -31,6 +31,8 @@ where:
 - $D$ is the diameter of the coil
 - $r$ is the radius of the wire
 
+The larger this $L$ is, the further it can reach before the wave becomes too weak due to resistance.
+
 Now that we know how loop antennas behave, let’s look at how I built my own coil and connected it to my function generator to send Morse code across a table.
 
 ## Special Modulation
