@@ -81,7 +81,7 @@ I added a switch with an LED to it as a help to see if the function generator is
 6. ATTENTION: Make sure that nothing overlaps with anything. On breadboard, vertical lines of holes are all connected to eachother (in groups of five basically) so if you solder anything with the LED's onto a line where for example a button is soldered, it will connect! 
 
 #### Finished
-Now we've built all components needed for a radio transmitter: The carrier wave generator, the antenna, and a way to On-Off-Key.
+Now we've built all components needed for a radio transmitter: The carrier wave generator, the antenna, and a way to On-Off-Key. Let's get all of this together and make it work!
 
 ## Completing the Radio Transmitter
 1. Take all the assembled parts (power supply, function generator, antenna, breadboard)
@@ -112,11 +112,12 @@ Now we've built all components needed for a radio transmitter: The carrier wave 
 10. Power the function generator with your battery or other power source. Again, check that the voltage is maximum 12V. From this point on, your setup will start radiating.
 <img src="images_tutorial\power_setup.jpg" width="200">
 
-11. Turn on your radio.
-12. Turn the radio to AM
-13. Go a few meters away from electronics such as your laptop, phone, TV, lights and LED lights, light switches, etc... These will otherwise interfere.
-14. Have your antenna maybe 20 or 30 centimeters away from the radio.
-15. Press down on the button without taking your finger off and slowly tune the radio in the range 1MHz to 1.3MHz until the static suddenly gets really loud. Now you have found your signal.
-16. Take your finger off the button and press on it a few times to really make sure you've found your frequency. To confirm, you should be hearing the button clicks on the radio, or the static becoming louder with every press.
-17. If this is the case, take your antenna and kit away from the radio - constantly clicking on the button - until you can't hear the changes on the radio anymore. This can be the case anywhere between a few centimeters to 3 or 4 meters.
-18. Great job! You have created your own radio system and can now send morse code wirelessly across a short distance!
+## Connecting with your Radio Receiver
+1. Turn on your radio.
+2. Turn the radio to AM
+3. Go a few meters away from electronics such as your laptop, phone, TV, lights and LED lights, light switches, etc... These will otherwise interfere.
+4. Have your antenna maybe 20 or 30 centimeters away from the radio.
+5. Press down on the button without taking your finger off and slowly tune the radio in the range 1MHz to 1.3MHz until the static suddenly gets really loud. Now you have found your signal.
+6. Take your finger off the button and press on it a few times to really make sure you've found your frequency. To confirm, you should be hearing the button clicks on the radio, or the static becoming louder with every press.
+7. If this is the case, take your antenna and kit away from the radio - constantly clicking on the button - until you can't hear the changes on the radio anymore. This can be the case anywhere between a few centimeters to 3 or 4 meters.
+8. Great job! You have created your own radio system and can now send morse code wirelessly across a short distance!
