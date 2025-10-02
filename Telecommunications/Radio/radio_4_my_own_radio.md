@@ -3,12 +3,12 @@ Now that we have learned quite a bit of the basics, we have enough theory to be 
 
 As we learned, for this project a loop antenna is ideal, since I just want to send morse code (on-off switching) across a table. 
 
-But first things first in all radio transmitters, we need a carrier wave. I could have made a stable oscillator myself, but there are a few reasons why I didn't:
+But first things first, in all radio transmitters, we need a carrier wave. I could have made a stable oscillator myself, but there are a few reasons why I didn't:
 - expensive (transistors and many other parts)
 - too big (would have taken much more space)
 - no guarantee that it would be stable
 
-For that reason, I decided to buy a wave generator kit off of AliExpress for less than a Franc. The Kit was a self-build kit coming with all the parts, instructions, and a schematic circuit of both the kit and the integrated circuit. The finished product used a maximum of 12 Volts DC and you could select the frequency range between 1 Hz and 1 MHz. Within those ranges you had 3 knobs to tune the wave finely or coarsely, and also to change the amplitude.  
+For that reason, I decided to buy a wave generator kit off AliExpress for less than a Franc. The Kit was a self-build kit, coming with all the parts, instructions, and a schematic circuit of both the kit and the integrated circuit. The finished product used a maximum of 12 Volts DC, and you could select the frequency range between 1 Hz and 1 MHz. Within those ranges, you had 3 knobs to tune the wave finely or coarsely, and also to change the amplitude.  
 
 ## Parts list for the whole transmitter
 - Function generator Kit with XR2206
@@ -25,25 +25,25 @@ For that reason, I decided to buy a wave generator kit off of AliExpress for les
 - a switch
 - 2x 220 Ohm resistors
 - some smaller cables
-- a radio that has AM
+- a radio that has AM (I bought the Panasonic RF-2400D and it worked perfectly)
 - sticky tape
 <img src="images_tutorial\battery_image.jpg" width="200">
 
 ## Instructions:
 #### Carrier wave generator:
 1. Build the function generator kit according to the instructions it comes with. I have uploaded the same instructions here in case it didn't come with one.
-<img src="images_tutorial\function_generator_schematic.jpg" width="300" style="transform:rotate(-90deg);">
+<img src="images_tutorial\function_generator_schematic.jpg" width="300">
 <img src="images_tutorial\function_generator_finished.jpg" width="200">
 
-2. Take the two long cables. Open up the screws of the GND output (Top one on the blue box) and the SIN output (bottom one) on the generator. The middle output is for square waves, but we don't need that.
-3. Trim the two cables and solder each end for better connection.
-4. Put on cable on the SIN output, and the other cable in the GND output. Close the screws tightly and make sure the cables won't fall out.
+1. Take the two long cables. Open up the screws of the GND output (Top one on the blue box) and the SIN output (bottom one) on the generator. The middle output is for square waves, but we don't need that.
+2. Trim the two cables and solder each end for better connection.
+3. Put on cable on the SIN output, and the other cable in the GND output. Close the screws tightly and make sure the cables won't fall out.
 <img src="images_tutorial\function_generator_cables.jpg" width="200">
 
-5. On the other ends of the two cables, solder a pin on each.
+1. On the other ends of the two cables, solder a pin on each.
 <img src="images_tutorial\function_generator_pins.jpg" width="200">
 
-6. Now you should be left with the generator and a long cable with a pin at the end coming out of the SIN output and another long cable coming out of the GND (also with a pin at the other end).
+1. Now you should be left with the generator and a long cable with a pin at the end coming out of the SIN output and another long cable coming out of the GND (also with a pin at the other end).
 <img src="images_tutorial\function_generator_complete.jpg" width="200">
 
 #### Coil antenna
@@ -64,7 +64,7 @@ For that reason, I decided to buy a wave generator kit off of AliExpress for les
 1. Solder the pin inputs on the positive line, the negative line, and then two pin inputs on one side oppposite eachother (this is where the antenna will go, so check that the distance is about right)
 If unclear, I used pins and pin inputs so that the entire thing is detachable and not permanent. This makes for easier transport and storage.
 2. Solder the button to the breadboard. One side is connected with a cable to the positive line. The other side diagonal to the first on is connected to one of the pins where the loop coil will go.
-3. Connect the other pin where the loop coil goes the the ground of the breadboard.
+3. Connect the other pin where the loop coil goes to the ground of the breadboard.
 <img src="images_tutorial\breadboard_top.jpg" width="200">
 <img src="images_tutorial\breadboard_side.jpg" 
 width="200">
@@ -74,7 +74,7 @@ width="200">
 I added a switch with an LED to it as a help to see if the function generator is even on. Note that this LED will not work if the coil is connected, as the current will rather go through the coil than through the LED (less resistance). This LED part is more just a debug but nontheless quite useful.
 
 1. Connect the unused side of the button next to the one going to the coil with the left pin of the switch. 
-2. From the middle pin, connect two resistors in series (after eachother).
+2. From the middle pin, connect two resistors in series (after each other).
 3. Connect the LED. Look out for the polarity.
 4. Connect the GND pin of the LED to the ground of the breadboard.
 5. The right pin of the switch isn't connected to anything. This means that the switch is off when it is on that side.
@@ -116,8 +116,10 @@ Now we've built all components needed for a radio transmitter: The carrier wave 
 1. Turn on your radio.
 2. Turn the radio to AM
 3. Go a few meters away from electronics such as your laptop, phone, TV, lights and LED lights, light switches, etc... These will otherwise interfere.
-4. Have your antenna maybe 20 or 30 centimeters away from the radio.
+4. Have your antenna maybe 20 or 30 centimetres away from the radio.
 5. Press down on the button without taking your finger off and slowly tune the radio in the range 1MHz to 1.3MHz until the static suddenly gets really loud. Now you have found your signal.
 6. Take your finger off the button and press on it a few times to really make sure you've found your frequency. To confirm, you should be hearing the button clicks on the radio, or the static becoming louder with every press.
-7. If this is the case, take your antenna and kit away from the radio - constantly clicking on the button - until you can't hear the changes on the radio anymore. This can be the case anywhere between a few centimeters to 3 or 4 meters.
+7. If this is the case, take your antenna and kit away from the radio - constantly clicking on the button - until you can't hear the changes on the radio any more. This can be the case anywhere between a few centimetres to 3 or 4 meters.
 8. Great job! You have created your own radio system and can now send morse code wirelessly across a short distance!
+   
+On my GitHub, you can find a video demonstrating how it could sound. 

@@ -9,7 +9,7 @@ To send Morse code wirelessly, I needed three things:
 
 ## Antennas
 There are many different types of antenna. The two common ones are:
-- **Monopole antenna (straight wire):** A simple metal rod or wire sticking up from the transmitter. It reaches peak efficiency when its size is that of a quarter of the carrier wave length. At 1 MHz, the wavelength is about 300 meters, so a quarter would be 75 meters (using the $c=\lambda f$ formula). Clealry I do not have the possibility to build a 75 meter high antenna.
+- **Monopole antenna (straight wire):** A simple metal rod or wire sticking up from the transmitter. It reaches peak efficiency when its size is that of a quarter of the carrier wave length. At 1 MHz, the wavelength is about 300 meters, so a quarter would be 75 meters (using the $c=\lambda f$ formula). Clearly I do not have the possibility to build a 75-meter-high antenna.
 - **Loop (or coil) antenna:** A wire bent into a loop, often with many turns. Instead of mainly radiating electric fields like a monopole, the loop produces strong magnetic fields nearby (called near-field). This works great over very short distances, but the antenna strength quickly becomes very weak over even just a few meters. Unlike a big antenna that can radiate far-field electromagnetic waves, my loop only produces strong magnetic fields in the near-field region. That’s why my demo works well across a table, but not across a city.
   
 Because I wanted to build a radio system to demonstrate all of this on just one table, a loop antenna is the perfect option here.
@@ -18,7 +18,7 @@ Because I wanted to build a radio system to demonstrate all of this on just one 
 - A wire carrying a current (current meaning a moving charge -> changing electric field) generates a magnetic field. 
 - Turning this wire into a loop makes the magnetic field get stronger.
 - If the current alternates (as with oscillating current), the magnetic field from the loop also goes back and forth.
-- This alternating magnetic field creates current in another metal object (for example a radio receiver antenna).
+- This alternating magnetic field creates current in another metal object (for example, a radio receiver antenna).
 
 Since the magnetic field alternates anyway, the antenna doesn't have a "side". 
 The radiation is strongest in the plane of the loop (to their sides, not facing the hole), while directly along the axis (through the hole) the signal is very weak. This is because the fields from different parts of the loop cancel in that direction. A loop antenna has a doughnut-shaped radiation pattern.

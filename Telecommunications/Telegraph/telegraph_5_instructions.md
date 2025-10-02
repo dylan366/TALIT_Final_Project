@@ -118,3 +118,5 @@ It is important that the magnets REPEL each other when put into this position:
 This is the end of the instructions of building a telegraph. When you press down on the button of the telegraph key, the arm of the sounder should be pulled down and make a "click" sound and upon release of the key button it should go back to its original position.
 If that isn't the case, adjust that plastic screw with the magnets in it. This is purposefully done in case the strength of the magnet differs. The arm should be like on the verge of falling down, but barely doesn't because that plastic screw's magnets pushes it up. Now the magnetic field is just enough to push it up, so upon activating the electromagnet we create a stronger magnetic field there - hence forcefully pulling it downwards.
 In case it still won't work, check all the connections.
+
+And that's it! All sources that I used to create this project can be find in the sources folder. There you can read into this stuff in greater detail. 
