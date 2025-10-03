@@ -123,3 +123,4 @@ Now we've built all components needed for a radio transmitter: The carrier wave 
 8. Great job! You have created your own radio system and can now send morse code wirelessly across a short distance!
    
 On my GitHub, you can find a video demonstrating how it could sound. 
+There are two pdf's in the sources folder for the XR2206-IC module - the module used in the function generator kit.
